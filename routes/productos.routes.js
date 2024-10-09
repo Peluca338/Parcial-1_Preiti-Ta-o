@@ -4,6 +4,7 @@ import * as controladores from "../controllers/productos.controlador.js"
 const route = express.Router()
 
 //Rutas
+route.get("/", controladores.getRopa)
 route.get("/productos", controladores.getRopa)
 route.get("/productos/:id", controladores.getRopaId)
 route.get("/producto/nuevo", controladores.formRopaNueva)
